@@ -1,0 +1,300 @@
+@import "palette.less";
+
+/* RESPONSIVE NAVIGATION */
+// Outer navigation wrapper
+.navigation {
+  height: 70px;
+  background: #fff;
+}
+
+// Logo and branding
+.brand {
+  position: absolute;
+  float: left;
+  left: 15px;
+  a,
+  a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.brand img {
+  padding-top: 10px;
+}
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+// Navigation
+nav {
+  float: right;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      position: relative;
+      a,
+      a:visited {
+        display: block;
+        padding: 0 20px;
+        line-height: 70px;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+          background: red;
+          color: #ffffff;
+        }
+        &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
+        }
+      } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Dropdown list binds to JS toggle event
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  background: #fff; // color of hamburger menu background
+  height: 69px; // Adjust Hamburger size in top right corner
+  width: 70px; // Adjust Hamburger size in top right corner
+}
+@media only screen and (max-width: 798px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+    margin-right: 4px; // Adjust Hamburger position in top right corner
+    margin-top: 4px; // Adjust Hamburger position in top right corner
+  }
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+    ul {
+      display: none;
+      li {
+        float: none;
+        a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #000; // color of hamburger menu
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+/* RESPONSIVE NAVIGATION END */
+
+/* BODY */
+body, html {
+  padding: 0;
+  font-family: @font1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: @color2;
+}
+
+.content {
+  height: 100px;
+  border: 1px dotted @color3;
+  margin-right: 1em;
+  margin-left: 1em;
+  background-color: @color1;
+}
+/* BODY END */
+
+.hero-image {
+  background-image: url("../images/ace10.jpg");
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1000;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: @color1;
+  height: 115px;
+  font-size: 15px;
+}
+
+.footernav {
+  float: right;
+  padding-top: 3em;
+}
+
+.footernav a {
+  color: @color3;
+  text-decoration: none;
+  margin-right: 3.5em;
+}
+
+footer img {
+  padding-top: 1.5em;
+  width: 80px;
+  margin-top: 1em;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 7px;
+  padding-top: 13em;
+  color: @lightColor3
+}
+/* FOOTER END */
+
+/* DESKTOP RESOLUTION */
+@media screen and (min-width: 1025px) {
+  .hero-image {
+    background-image: url("../images/ace10.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1000;
+  }
+
+  header {
+    position: relative;
+  }
+
+  nav {
+    margin-right: -6em;
+  }
+
+  section#top.content {
+    width: 25%;
+    display: block;
+    float: right;
+    height: 400px;
+  }
+
+  section#second-section.content {
+    width: 72%;
+    display: block;
+    height: 200px;
+  }
+
+  section#third-section.content {
+    width: 72%;
+    display: block;
+    height: 200px;
+  }
+
+  section#fourth-section.content {
+    display: none;
+  }
+
+  section#fifth-section.content {
+    display: none;
+  }
+
+  section#left-bottom.content {
+    width: 50%;
+    height: 300px;
+  }
+
+  section#right-bottom.content {
+    width: 50%;
+    float: right;
+    height: 300px;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  footer img {
+    width: 100px;
+    margin: 1em;
+  }
+
+  #copyright {
+    text-align: center;
+    font-size: 9px;
+    padding-top: 12em;
+    color: @lightColor3
+  }
+}
