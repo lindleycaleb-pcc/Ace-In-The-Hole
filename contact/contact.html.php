@@ -19,7 +19,7 @@
     </header>
 
     <main>
-    <section class="content">
+    <section class="content width-1200">
         <div class="form-page" id="contact-form">
             <h2>Contact Us</h2>
             <p>Got a question for us? Just fill out the form below. A member of our staff will contact you soon.</p>
