@@ -1,3 +1,4 @@
+
 <section class="navigation">
     <div class="nav-container">
         <nav>
@@ -7,22 +8,22 @@
                     <a href="#!">Courses</a>
                     <ul class="nav-dropdown">
                         <li>
-                            <a href="<?php echo BASE_URL; ?>courses/long.html.php">Long Course</a>
+                            <a href="<?php echo BASE_URL; ?>/courses/long-course/long.html.php">Long Course</a>
                         </li>
                         <li>
-                            <a href="<?php echo BASE_URL; ?>courses/olympic.html.php">Olympic Course</a>
+                            <a href="<?php echo BASE_URL; ?>/courses/olympic-course/olympic.html.php">Olympic Course</a>
                         </li>
                         <li>
-                            <a href="<?php echo BASE_URL; ?>courses/sprint.html.php">Sprint Course</a>
+                            <a href="<?php echo BASE_URL; ?>/courses/sprint-course/sprint.html.php">Sprint Course</a>
                         </li>
                         <li>
-                            <a href="<?php echo BASE_URL; ?>courses/half-marathon.html.php">Half Marathon</a>
+                            <a href="<?php echo BASE_URL; ?>/courses/half-marathon/half-marathon.html.php">Half Marathon</a>
                         </li>
                         <li>
-                            <a href="<?php echo BASE_URL; ?>courses/splash-n-dash.html.php">Splash n'Dash</a>
+                            <a href="<?php echo BASE_URL; ?>/courses/splash-n-dash/splash-n-dash.html.php">Splash n'Dash</a>
                         </li>
                         <li>
-                            <a href="<?php echo BASE_URL; ?>courses/try-a-tri.html.php">Try-A-Tri</a>
+                            <a href="<?php echo BASE_URL; ?>/courses/try-a-tri/try-a-tri.html.php">Try-A-Tri</a>
                         </li>
                     </ul>
                 </li>
@@ -40,4 +41,6 @@
             </ul>
         </nav>
     </div>
+
 </section>
+
