@@ -1,0 +1,55 @@
+div#dots-swim,#dots-bike,#dots-run {
+    float: right;
+    position: relative;
+    top: -27px;
+}
+
+div#dots-swim #dot1,#dots-swim #dot2,#dots-swim #dot3,#dots-swim #dot4 {
+    background-color: red;
+}
+
+div#dots-swim #dot5 {
+    background-color: grey;
+}
+
+div#dots-bike #dot1,#dots-bike #dot2,#dots-bike #dot3 {
+    background-color: red;
+}
+
+div#dots-bike #dot4,#dots-bike #dot5 {
+    background-color: grey;
+}
+
+div#dots-run #dot1,#dots-run #dot2, #dots-run #dot3,#dots-run #dot4 {
+    background-color: red;
+}
+
+div#dots-run #dot5 {
+    background-color: grey;
+}
+
+div.diff-level span#dot1 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+div.diff-level span#dot2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+div.diff-level span#dot3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+div.diff-level span#dot4 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+div.diff-level span#dot5 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
